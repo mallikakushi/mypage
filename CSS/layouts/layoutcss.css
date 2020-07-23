@@ -1,0 +1,130 @@
+html {
+  box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: Arial;
+}
+h3 {
+	text-align: center;
+}
+
+.page {
+	width: 97%;
+	max-width: 1200px;
+	margin-top: 4%;
+	margin-left:10%;
+	float: none;
+	background-color: rgba(255,99,71,0.5);
+}
+[class*="col-"] {
+	width : 100%;
+	margin: 0 2%;
+
+}
+.row {
+	margin-left: 4%;
+	display: flex;
+	flex-flow: row wrap;
+	flex: 0 1 auto;
+}
+
+.col-1 {
+	background-color: lightgray;
+	
+}
+
+.col-2 {
+	background-color :lightgray;
+
+}
+
+.col-3 {
+	background-color: lightgray;
+	
+}
+
+.col-4 {
+	background-color :lightgray;
+}
+
+.col-5, .col-6 {
+	background-color :lightgray;
+	margin-top: 40px;
+}
+
+.col-7 {
+	background-color : lightgray;
+	margin-top : 40px;
+}
+@media only screen and (max-width: 600px) {
+	
+	body {
+		background-color: lightblue;
+	}
+		.col-1,.col-2,.col-3,.col-4{
+			flex : 0 0 92%;
+			margin-bottom: 2%;
+		}
+		.col-5 ,.col-6 {
+			flex: 0 0 44%;
+		}
+		.col-7{
+			flex : 0 0 70%;
+		}
+		
+}
+
+
+
+@media only screen and (min-width: 601px) {
+		
+	body {
+		background:url('backimg.jpg');
+	}
+
+		.col-1,.col-2,.col-3,.col-4{
+			flex : 0 0 44%;
+			margin-bottom : 2%;
+		}
+		.col-5{
+			flex : 0 0 44%;
+		}
+		.col-6{
+			flex  : 0 0 44%;
+		}
+		.col-7 {
+			flex : 0 0 92%;
+		}
+		
+		
+}
+
+
+@media only screen and (min-width: 996px) {
+		
+	body {
+		background:url('image.jpg');
+	}
+
+		.col-1,.col-2,.col-3,.col-4{
+			flex : 0 0 20%;
+		}
+		.col-5{
+			flex : 0 0 44%;
+		}
+		.col-6{
+			flex  : 0 0 44%;
+		}
+		.col-7 {
+			flex : 0 0 92%;
+		}
+		
+		
+}
